@@ -1,0 +1,55 @@
+multi-broker-trading-system/
+├── CMakeLists.txt
+├── src/
+│   ├── main.cpp
+│   ├── core/
+│   │   ├── TradingEngine.cpp
+│   │   ├── TradingEngine.h
+│   │   ├── MarketDataManager.cpp
+│   │   ├── MarketDataManager.h
+│   │   ├── OrderManager.cpp
+│   │   ├── OrderManager.h
+│   │   ├── RiskManager.cpp
+│   │   ├── RiskManager.h
+│   │   └── Logger.h
+│   ├── strategies/
+│   │   ├── IStrategy.h
+│   │   ├── MovingAverageCrossover.cpp
+│   │   ├── MovingAverageCrossover.h
+│   │   ├── MACD.cpp
+│   │   ├── MACD.h
+│   │   ├── MeanReversion.cpp
+│   │   ├── MeanReversion.h
+│   │   ├── RSI.cpp
+│   │   ├── RSI.h
+│   │   ├── BollingerBands.cpp
+│   │   └── BollingerBands.h
+│   ├── brokers/
+│   │   ├── IBroker.h
+│   │   ├── ExnessBroker.cpp
+│   │   ├── ExnessBroker.h
+│   │   ├── MetaTraderBroker.cpp
+│   │   └── MetaTraderBroker.h
+│   └── utils/
+│       ├── ConfigLoader.cpp
+│       ├── ConfigLoader.h
+│       ├── Indicators.cpp
+│       └── Indicators.h
+├── include/
+│   └── thirdparty/
+│       ├── nlohmann/
+│       │   └── json.hpp
+│       └── spdlog/
+│           └── spdlog.h
+├── tests/
+│   ├── CMakeLists.txt
+│   ├── test_strategies.cpp
+│   ├── test_brokers.cpp
+│   └── test_indicators.cpp
+├── config/
+│   ├── trading_config.json
+│   └── logging_config.json
+└── docs/
+    ├── README.md
+    ├── CONTRIBUTING.md
+    └── API.md
